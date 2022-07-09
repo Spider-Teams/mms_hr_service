@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("api/employee")
 public class EmployeeController {
     @Autowired
@@ -34,6 +35,6 @@ public class EmployeeController {
 
     @DeleteMapping("{id}")
     public void deleteEmployee(@PathVariable(value = "id") Long id) {
-        employeeService.deleteEmployee(id);
+         employeeService.deleteEmployee(id);
     }
 }

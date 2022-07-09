@@ -20,6 +20,16 @@ public class Employee {
     private Long departmentId;
     private Long titleId;
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    private String email;
+
     public Long getId() {
         return id;
     }
