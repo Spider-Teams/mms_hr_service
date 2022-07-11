@@ -9,8 +9,11 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private Long age;
+    private String birthDate;
     private String address;
+
+    private String phone;
+
     private String createDate;
     private String updateDate;
     private String createBy;
@@ -19,6 +22,14 @@ public class Employee {
     private Long active;
     private Long departmentId;
     private Long titleId;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public String getEmail() {
         return email;
@@ -46,12 +57,12 @@ public class Employee {
         this.name = name;
     }
 
-    public Long getAge() {
-        return age;
+    public String getBirthDate() {
+        return birthDate;
     }
 
-    public void setAge(Long age) {
-        this.age = age;
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
     }
 
     public String getAddress() {
