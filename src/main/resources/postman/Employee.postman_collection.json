@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "a763388f-ba57-499c-adef-84e8fd487840",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/employee/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"trung11222\",\n    \"lastName\": \"phan22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"trungphan\",\n    \"birthDate\": \"12/12/1990\",\n    \"address\": \"An Khanh, Ninh Kieu, Can Tho city\",\n    \"phone\": \"090246810\",\n    \"createDate\": \"10-07-2022\",\n    \"updateDate\": \"\",\n    \"createBy\": \"trungphan\",\n    \"updateBy\": \"\",\n    \"endDate\": \"\",\n    \"active\": \"1\",\n    \"departmentId\": \"1\",\n    \"titleId\": \"1\",\n    \"email\": \"trungphan@gmail.com\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/employee/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"name\": \"trungphan1\",\n    \"age\": \"99\",\n    \"address\": \"An Khanh, Ninh Kieu, Can Tho city\",\n    \"createDate\": \"10-07-2022\",\n    \"updateDate\": \"\",\n    \"createBy\": \"trungphan\",\n    \"updateBy\": \"\",\n    \"endDate\": \"\",\n    \"active\": \"1\",\n    \"departmentId\": \"1\",\n    \"titleId\": \"1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/employee/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/employee/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"employee",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

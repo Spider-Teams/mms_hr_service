@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "632d2afe-822a-4824-8285-5e9faac32c21",
+		"name": "LeaveRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/leaveRequest/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/leaveRequest/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"leaveRequest",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/leaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromDate\": \"2020-11-12\",\n    \"toDate\": \"2020-12-12\",\n    \"createdBy\": \"trungphan\",\n    \"reason\": \"i want to have more relax\",\n    \"leaveType\": \"1\",\n    \"supervisor\": \"1\",\n    \"lineManager\": \"1\",\n    \"approval\": \"1\",\n    \"approvalNote\": \"ok\",\n    \"createdDate\": \"2020-11-12 13:12:15\",\n    \"approvedDate\": \"2020-11-12 13:12:15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/leaveRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"leaveRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/leaveRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4,\n    \"fromDate\": \"2020-11-12\",\n    \"toDate\": \"2020-12-12\",\n    \"leaveType\": 2,\n    \"reason\": \"i want to have more relax\",\n    \"createdBy\": \"trungphan\",\n    \"createdDate\": \"2020-11-12 13:12:15\",\n    \"supervisor\": \"1\",\n    \"lineManager\": \"1\",\n    \"approval\": 1,\n    \"approvalNote\": \"ok\",\n    \"approvedDate\": \"2020-11-12 13:12:15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/leaveRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"leaveRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/leaveRequest/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/leaveRequest/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"leaveRequest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
