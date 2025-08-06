@@ -7,3 +7,6 @@ This service will contain some feature:
 5. Equipment management: list, add, update, delete.
 6. Timekeeping
 Hello world
+test 1
+test 2
+test 3
