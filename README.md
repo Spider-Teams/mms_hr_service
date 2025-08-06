@@ -6,3 +6,4 @@ This service will contain some feature:
 4. Deparment mamagement: list, add, update, delete.
 5. Equipment management: list, add, update, delete.
 6. Timekeeping
+Hello world
